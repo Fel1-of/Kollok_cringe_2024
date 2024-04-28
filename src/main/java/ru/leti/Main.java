@@ -1,6 +1,7 @@
+package ru.leti;
+
 import com.mathsystem.api.graph.GraphFactory;
-import com.mathsystem.domain.plugin.nativerealization.plugins.NumberOfConnectivityComponents;
-import com.mathsystem.domain.plugin.plugintype.GraphCharacteristic;
+import ru.leti.EdgeCriticalConnected;
 
 import java.io.File;
 import java.io.FileNotFoundException;

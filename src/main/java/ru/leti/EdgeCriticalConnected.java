@@ -1,9 +1,9 @@
-import com.mathsystem.api.graph.GraphFactory;
+package ru.leti;
+
 import com.mathsystem.api.graph.model.*;
 import com.mathsystem.domain.graph.repository.Color;
 import com.mathsystem.domain.plugin.plugintype.GraphProperty;
 
-import java.awt.color.ICC_ColorSpace;
 import java.util.*;
 
 public class EdgeCriticalConnected implements GraphProperty {

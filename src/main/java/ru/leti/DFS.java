@@ -1,3 +1,5 @@
+package ru.leti;
+
 import com.mathsystem.api.graph.model.*;
 
 import java.util.*;
