@@ -11,15 +11,9 @@ public class TriangleDegreeThreeChecker implements GraphProperty {
     public boolean execute(Graph graph) {
 
         Map<UUID, Integer> vertexDegrees = calculateVertexDegrees(graph);
-        System.out.println("Vertex Degrees:");
-        for (Map.Entry<UUID, Integer> entry : vertexDegrees.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+
         List<Set<UUID>> triangles = findTriangles(graph);
-        System.out.println("Triangles:");
-        for (Set<UUID> triangle : triangles) {
-            System.out.println(triangle);
-        }
+
         for (Set<UUID> triangle : triangles) {
             int degreeThreeCount = 0;
             for (UUID vertex : triangle) {
@@ -56,10 +50,7 @@ public class TriangleDegreeThreeChecker implements GraphProperty {
             adjacencyList.get(fromV).add(toV);
             adjacencyList.get(toV).add(fromV);
         }
-        System.out.println("Adjacency List:");
-        for (Map.Entry<UUID, Set<UUID>> entry : adjacencyList.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+
         for (UUID vertex : adjacencyList.keySet()) {
             Set<UUID> neighbors = adjacencyList.get(vertex);
             for (UUID neighbor1 : neighbors) {
