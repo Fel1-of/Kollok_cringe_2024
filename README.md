@@ -1,4 +1,3 @@
----
 
 # TriangleDegreeThreeChecker
 
@@ -25,4 +24,3 @@ boolean result = checker.execute(graph);
 System.out.println("Результат проверки: " + result);
 ```
 
----
